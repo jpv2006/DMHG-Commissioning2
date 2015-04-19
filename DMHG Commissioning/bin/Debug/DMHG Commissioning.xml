@@ -1,0 +1,1446 @@
+﻿<?xml version="1.0"?>
+<doc>
+<assembly>
+<name>
+DMHGCommissioning
+</name>
+</assembly>
+<members>
+<member name="T:DMHG_Commissioning.Site">
+	<summary>
+ An object to hold all relevant site information.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_SiteInfo.Set_Site(DMHG_Commissioning.Site)">
+	<summary>
+ Loads the information of the site given into the form.
+ </summary>
+	<param name="site">The site whose information is to be displayed.</param>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_SiteInfo.Button_Configuration_Click(System.Object,System.EventArgs)">
+	<summary>
+ Saves the Configuration data
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_SiteInfo.ConfigSaved(DMHG_Commissioning.Site,System.Boolean)">
+	<summary>
+ Sets column SiteSaved entry to "result" value in siteinfo table
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_SiteInfo.ConfigUpdated(DMHG_Commissioning.Site,System.Boolean)">
+	<summary>
+ Updates column SiteSaved entry to True in row 1 of siteinfo table
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DMHG_Commissioning.sitesDataSet.siteinfoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSet.siteinfoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSet.siteinfoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.siteinfoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DMHG_Commissioning.sitesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DMHG_Commissioning.sitesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DMHG_Commissioning.sitesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateAll(DMHG_Commissioning.sitesDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="P:DMHG_Commissioning.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DMHG_Commissioning.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:DMHG_Commissioning.My.Resources.Resources.DMHG_Logo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:DMHG_Commissioning.My.Resources.Resources.DMHG_Logo_small">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:DMHG_Commissioning.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_Form(DMHG_Commissioning.Site)">
+	<summary>
+ Fills the form with a site's information.
+ </summary>
+	<param name="site">The site whose information is to populate the form.</param>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Button_Save_Click(System.Object,System.EventArgs)">
+	<summary>
+ Save the site's information.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Edit_Site(DMHG_Commissioning.Site)">
+	<summary>
+ Attempts to edit the site.
+ </summary>
+	<param name="site">Site to edit.</param>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_Site(DMHG_Commissioning.Site)">
+	<summary>
+ Fills the given site with the information in the form.
+ </summary>
+	<param name="site">The site to fill.</param>
+	<returns>The success of filling the site.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.Control)">
+	<summary>
+ Parses a form control to data that can easily be stored in a site.
+ </summary>
+	<param name="c">The control to parse.</param>
+	<returns>The success of the parsing.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.CheckBox)">
+	<summary>
+ Parse a CheckBox control to data that can easily be stored in a site.
+ </summary>
+	<param name="cb">The checkbox to parse.</param>
+	<returns>The success of the parsing.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.TextBox)">
+	<summary>
+ Parses a TextBox control to data that can easily be stored in a site.
+ </summary>
+	<param name="tb">The TextBox to parse.</param>
+	<returns>The success of the parsing.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.ComboBox)">
+	<summary>
+ Parses a ComboBox Control to data that can easily be stored in a site.
+ </summary>
+	<param name="cob">The ComboBox to parse.</param>
+	<returns>The success of the parsing.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Site_Database_Name(DMHG_Commissioning.Site)">
+	<summary>
+ Formats a database name for the site's data database
+ </summary>
+	<param name="site">The site to use.</param>
+	<returns>The appropriate name for the site's data database.</returns>
+	<remarks>This does not create the data database.</remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Site_Exists(DMHG_Commissioning.Site)">
+	<summary>
+ Checks if the site already exists in the database.
+ </summary>
+	<param name="site">Site to check for.</param>
+	<returns>Whether the site exists.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Update_Site(DMHG_Commissioning.Site)">
+	<summary>
+ Attempts to update the site's entry in the database.
+ </summary>
+	<param name="site">Site to update.</param>
+	<returns>Success of update.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Save_Site(DMHG_Commissioning.Site)">
+	<summary>
+ Attempts to save the site in the database and create the data tables.
+ </summary>
+	<param name="site">Site to save.</param>
+	<returns>Success of save.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.ConfigSaved(DMHG_Commissioning.Site)">
+	<summary>
+ Sets column SiteSaved entry to False in siteinfo table
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.DoesTableExist(System.String,DMHG_Commissioning.Site)">
+	<summary>
+ Checks to see if a table exists in Database or not.
+ </summary>
+	<param name="tblName">Table name to check</param>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_PhotonFactors(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables for scp, scp2, sc, wf, edwf (Varian Enhanced Dynamic WF), mwf (Elekta Motorized WF), mlcdlg (Dosimetric Leaf Gap), 
+ mlctf (mlc Transmission Factor), accessoryTF
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Drop_Table_PhotonFactors(DMHG_Commissioning.Site)">
+	<summary>
+ Drops the tables for scp, scp2, sc, wf, edwf (Varian Enhanced Dynamic WF), mwf (Elekta Motorized WF), mlcdlg (Dosimetric Leaf Gap), 
+ mlctf (mlc Transmission Factor), accessoryTF if site is updated with less tables
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_PhotonScans(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables for pdd_photons, pdd_photons_cones, pdd_photons_mlc, 
+ tmr_photons, tmr_photons_cones, tmr_photons_mlc,
+ cp_photons, ip_photons, dp_photons, 
+ pdd_wedge, cp_wedge, ip_wedge, pdd_mwedge (Elekta motorized wedge), cp_mwedge, ip_mwedge,
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_ElectronFactors(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables for of_electrons_100, of_electrons_105, of_electrons_110, cutoutTF
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_ElectronScans(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables for pdd_electrons, cp_electrons, ip_electrons, cp_electron_air
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_SetupInfo(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables which holds the measurement setup information on all factors and scans
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonFactors_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for Photon Factor table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddWedge_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Wedge PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddMWedge_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Motorized Wedge PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddMLC_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon MLC PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddCones_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Cones PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonTMROpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon TMR table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonTMRMLC_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon MLC TMR table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonTMRCones_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Cones TMR table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonProfilesOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Profiles table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonProfilesWedges_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Wedge Profiles table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonProfilesMWedge_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Motorized Wedge Profiles table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronPddOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronPddCutout_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon PDD with Cutouts table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronProfilesOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Electron Profiles table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronProfilesAir_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Electron Profiles in Air table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_SelectedConfiguration_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for each table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Generate_Insert_Site_Command(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Generates an MySql command to insert a new site into the database.
+ </summary>
+	<param name="site">New site to add to the database.</param>
+	<param name="connection">Database connection, must be opened beforehand.</param>
+	<returns>The sql command.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Generate_Update_Site_Command(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Generates an MySql command to update an existing site's information in the database.
+ </summary>
+	<param name="site">The site to update.</param>
+	<param name="connection">Database connection, must be opened beforehand.</param>
+	<returns>The sql command.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Add_Command_Parameters(MySql.Data.MySqlClient.MySqlCommand,DMHG_Commissioning.Site)">
+	<summary>
+ Adds the site parameters to a prepared MySql command.
+ </summary>
+	<param name="command">The prepared MySql command.</param>
+	<param name="site">The site to add.</param>
+	<returns>The populated command.</returns>
+	<remarks>When writing the command text, ensure the parameters retain the database's capitalization.</remarks>
+</member><member name="M:DMHG_Commissioning.Form_Login.Process_Login">
+	<summary>
+ Attempts to log the user in.
+ </summary>
+	<returns>The success of the login.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_Login.Show_Logged_In">
+	<summary>
+ Changes the form to the logged in appearance.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_Login.Show_Logged_Out">
+	<summary>
+ Changes the form to the logged out appearance.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_Login.Populate_Existing_Sites">
+	<summary>
+ Populates the existing site ComboBox Linac TextBox with the existing sites from the database.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Populate_Data_Table(System.Windows.Forms.DataGridView,System.String)">
+	<summary>
+ Populates the DGV data table with data from the factors database of the active site and the given table.
+ </summary>
+	<param name="tableControl">The data grid table control to edit.</param>
+	<param name="table">The factors table in the database to pull data from.</param>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Scp_Calculate(System.Object)">
+	<summary>
+ Calculates Scp/Sc.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Scp_CalcEdit(System.Object)">
+	<summary>
+ Calculates all Scp/Sc if there is an edit, writes the value into scpData and updates the database.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Temperature_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Pressing the Enter key selects the TextBox_Pressure, starting from TextBox_Temperature
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Pressure_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Pressing the Enter key selects the TextBox_Reading1, starting from TextBox_Pressure
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Reading1_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Pressing the Enter key selects the TextBox_Reading2, starting from TextBox_Reading1 
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Reading2_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Pressing the Enter key either selects the TextBox_Temperature or TextBox_Reading1, starting from TextBox_Reading2 
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.RepeatMeasurement">
+	<summary>
+ Clears TextBox_Reading1, Reading2, and Average and sets the cursor to TextBox_Reading1 in order to take new measurements in
+ response to too large a difference between Reading 1 and Reading2 and user selects to repeat Measurement.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Enter_Click(System.Object,System.EventArgs)">
+	<summary>
+ Enters data into a prexisting row.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.ReadingTolerance(System.Object,System.Object,System.Object)">
+	<summary>
+ Checks to see if Reading1 and Reading2 are within tolearance
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Save_Row(System.Data.DataRow)">
+	<summary>
+ Saves a row to the database. Receives the data in row as an argument from the call.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Add_Row_Command_Parameters(System.Data.DataRow,MySql.Data.MySqlClient.MySqlCommand)">
+	<summary>
+ Adds to the MySqlCommand command the entries for a row and fills the entries with the row data. Returns the filled command to Save_Row
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Edit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Responds to an Edit request by enabling the DGV so a row can be selected by the mouse.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.DataGridView_Factors_CellMouseClick(System.Object,System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ Selects a row using the mouse.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_Row_Edit(System.Data.DataRow)">
+	<summary>
+ Loads the data entry row with the data in the row selected in DataViewGrid after an edit request.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_XYRow_Edit(System.Data.DataRow)">
+	<summary>
+ Loads the data entry row with the X, Y data in the DataViewGrid row where data entry is to begin.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_TP(System.Data.DataRow)">
+	<summary>
+ Loads the data entry row with the Temp and Press data in the DataViewGrid row using the values found in the previous row.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Reading1_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ The next two subroutines check to see if any of the readings entered have changed and changes the average as needed.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Back_Click(System.Object,System.EventArgs)">
+	<summary>
+ Code for going back to the Data To Collect page if use selects the Back Button
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Exit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Code for exiting the program based on user selection of Exit Button
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_Row_Enter(System.Data.DataRow)">
+	<summary>
+ Loads the X and Y entries of the currently selected DGV row into the data entry row.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Skip_Click(System.Object,System.EventArgs)">
+	<summary>
+ Skips the Panel_Stability tests if the user chooses. Also called after stability is reached.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_StabEnter_Click(System.Object,System.EventArgs)">
+	<summary>
+ The following is to evaluate the entries on Panel_Stability and determine when stability is reached
+ </summary>
+</member><member name="T:DMHG_Commissioning.Form_ScpData">
+	<summary>
+ Loads the ScpData form
+ </summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DatabaseMaintenanceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorCalibrationFactorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorDiodeCalibrationFactorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorDiodeCalibrationStepDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorEnergyConversionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.EnergyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.Energy1DataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.FieldDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.InstitutionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.LocationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PostProcessActionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PostProcessGroupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PostProcessPreferenceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PreferenceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PriorValueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.QueueDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.RadiationDeviceDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.RadiationDeviceEnergyDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanAnalysisParameterDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanBackgroundDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanBackupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanCollimationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanCollimationBackupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionBackupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionCollimationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionCollimationBackupDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionDetectorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionMeasurementModeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionPointDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionTprDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionWedgeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDetectorDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanElectrometerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanLayerDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanMeasurementModeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanPointDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanProjectDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanProjectScanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanProjectUserDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanQueueExecutionOrderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanReadingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanRelatedScanDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanScriptDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanScriptExecutionOrderDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSessionDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSession1dsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSession3dsDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSession3dsTPRCalibrationDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSessionEquipmentDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanTprDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanWedgeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.UserDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppBackgroundDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppBackgroundDiodeDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppFrameDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppFrameReadingDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DatabaseMaintenanceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorCalibrationFactorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorDiodeCalibrationFactorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorDiodeCalibrationStepRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorEnergyConversionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.EnergyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.Energy1Row">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.FieldRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.InstitutionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.LocationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PostProcessActionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PostProcessGroupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PostProcessPreferenceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PreferenceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PriorValueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.QueueRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.RadiationDeviceRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.RadiationDeviceEnergyRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanAnalysisParameterRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanBackgroundRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanBackupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanCollimationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanCollimationBackupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionBackupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionCollimationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionCollimationBackupRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionDetectorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionMeasurementModeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionPointRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionTprRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionWedgeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDetectorRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanElectrometerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanLayerRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanMeasurementModeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanPointRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanProjectRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanProjectScanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanProjectUserRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanQueueExecutionOrderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanReadingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanRelatedScanRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanScriptRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanScriptExecutionOrderRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSessionRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSession1dsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSession3dsRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSession3dsTPRCalibrationRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSessionEquipmentRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanTprRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanWedgeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.UserRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppBackgroundRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppBackgroundDiodeRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppFrameRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppFrameReadingRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DatabaseMaintenanceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorCalibrationFactorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorDiodeCalibrationFactorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorDiodeCalibrationStepRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DetectorEnergyConversionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.EnergyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.Energy1RowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.FieldRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.InstitutionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.LocationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PostProcessActionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PostProcessGroupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PostProcessPreferenceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PreferenceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.PriorValueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.QueueRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.RadiationDeviceRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.RadiationDeviceEnergyRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanAnalysisParameterRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanBackgroundRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanBackupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanCollimationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanCollimationBackupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionBackupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionCollimationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionCollimationBackupRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionDetectorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionMeasurementModeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionPointRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionTprRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDefinitionWedgeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanDetectorRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanElectrometerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanLayerRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanMeasurementModeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanPointRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanProjectRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanProjectScanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanProjectUserRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanQueueExecutionOrderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanReadingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanRelatedScanRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanScriptRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanScriptExecutionOrderRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSessionRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSession1dsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSession3dsRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSession3dsTPRCalibrationRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanSessionEquipmentRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanTprRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.ScanWedgeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.UserRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppBackgroundRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppBackgroundDiodeRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppFrameRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.WppFrameReadingRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.DatabaseMaintenanceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.DetectorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.DetectorCalibrationFactorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.DetectorDiodeCalibrationFactorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.DetectorDiodeCalibrationStepTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.DetectorEnergyConversionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.EnergyTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.Energy1TableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.FieldTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.InstitutionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.LocationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.PostProcessActionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.PostProcessGroupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.PostProcessPreferenceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.PreferenceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.PriorValueTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.QueueTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.RadiationDeviceTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.RadiationDeviceEnergyTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanAnalysisParameterTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanBackgroundTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanBackupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanCollimationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanCollimationBackupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDefinitionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDefinitionBackupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDefinitionCollimationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDefinitionCollimationBackupTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDefinitionDetectorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDefinitionMeasurementModeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDefinitionPointTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDefinitionTprTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDefinitionWedgeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanDetectorTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanElectrometerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanLayerTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanMeasurementModeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanPointTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanProjectTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanProjectScanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanProjectUserTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanQueueExecutionOrderTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanReadingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanRelatedScanTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanScriptTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanScriptExecutionOrderTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanSessionTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanSession1dsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanSession3dsTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanSession3dsTPRCalibrationTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanSessionEquipmentTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanTprTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.ScanWedgeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.UserTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.WppBackgroundTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.WppBackgroundDiodeTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.WppFrameTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.WppFrameReadingTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.QueriesTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DMHG_Commissioning.SNC_DOSDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DMHG_Commissioning.SNC_DOSDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DMHG_Commissioning.SNC_DOSDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.TableAdapterManager.UpdateAll(DMHG_Commissioning.SNC_DOSDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:DMHG_Commissioning.SNC_DOSDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="T:DMHG_Commissioning._6_dataDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member>
+</members>
+</doc>
