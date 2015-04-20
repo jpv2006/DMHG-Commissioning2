@@ -22,12 +22,12 @@ Partial Class ScpGraph
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
-        Dim ChartArea1 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend1 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series1 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
-        Dim ChartArea2 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
-        Dim Legend2 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
-        Dim Series2 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea9 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend9 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series9 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
+        Dim ChartArea10 As System.Windows.Forms.DataVisualization.Charting.ChartArea = New System.Windows.Forms.DataVisualization.Charting.ChartArea()
+        Dim Legend10 As System.Windows.Forms.DataVisualization.Charting.Legend = New System.Windows.Forms.DataVisualization.Charting.Legend()
+        Dim Series10 As System.Windows.Forms.DataVisualization.Charting.Series = New System.Windows.Forms.DataVisualization.Charting.Series()
         Me.Chart_SCP = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Chart_AllScp = New System.Windows.Forms.DataVisualization.Charting.Chart()
         Me.Label_GraphHeader = New System.Windows.Forms.Label()
@@ -42,16 +42,16 @@ Partial Class ScpGraph
         Me.Chart_SCP.BorderlineColor = System.Drawing.Color.Black
         Me.Chart_SCP.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
         Me.Chart_SCP.BorderlineWidth = 2
-        ChartArea1.Name = "ChartArea1"
-        Me.Chart_SCP.ChartAreas.Add(ChartArea1)
-        Legend1.Name = "Legend1"
-        Me.Chart_SCP.Legends.Add(Legend1)
+        ChartArea9.Name = "ChartArea1"
+        Me.Chart_SCP.ChartAreas.Add(ChartArea9)
+        Legend9.Name = "Legend1"
+        Me.Chart_SCP.Legends.Add(Legend9)
         Me.Chart_SCP.Location = New System.Drawing.Point(42, 33)
         Me.Chart_SCP.Name = "Chart_SCP"
-        Series1.ChartArea = "ChartArea1"
-        Series1.Legend = "Legend1"
-        Series1.Name = "Series1"
-        Me.Chart_SCP.Series.Add(Series1)
+        Series9.ChartArea = "ChartArea1"
+        Series9.Legend = "Legend1"
+        Series9.Name = "Series1"
+        Me.Chart_SCP.Series.Add(Series9)
         Me.Chart_SCP.Size = New System.Drawing.Size(1274, 472)
         Me.Chart_SCP.TabIndex = 1
         Me.Chart_SCP.Text = "Chart2"
@@ -63,16 +63,16 @@ Partial Class ScpGraph
         Me.Chart_AllScp.BorderlineColor = System.Drawing.Color.Black
         Me.Chart_AllScp.BorderlineDashStyle = System.Windows.Forms.DataVisualization.Charting.ChartDashStyle.Solid
         Me.Chart_AllScp.BorderlineWidth = 2
-        ChartArea2.Name = "ChartArea1"
-        Me.Chart_AllScp.ChartAreas.Add(ChartArea2)
-        Legend2.Name = "Legend1"
-        Me.Chart_AllScp.Legends.Add(Legend2)
+        ChartArea10.Name = "ChartArea1"
+        Me.Chart_AllScp.ChartAreas.Add(ChartArea10)
+        Legend10.Name = "Legend1"
+        Me.Chart_AllScp.Legends.Add(Legend10)
         Me.Chart_AllScp.Location = New System.Drawing.Point(42, 492)
         Me.Chart_AllScp.Name = "Chart_AllScp"
-        Series2.ChartArea = "ChartArea1"
-        Series2.Legend = "Legend1"
-        Series2.Name = "Series1"
-        Me.Chart_AllScp.Series.Add(Series2)
+        Series10.ChartArea = "ChartArea1"
+        Series10.Legend = "Legend1"
+        Series10.Name = "Series1"
+        Me.Chart_AllScp.Series.Add(Series10)
         Me.Chart_AllScp.Size = New System.Drawing.Size(1274, 488)
         Me.Chart_AllScp.TabIndex = 2
         Me.Chart_AllScp.Text = "Chart3"
@@ -92,11 +92,13 @@ Partial Class ScpGraph
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.AutoSize = True
+        Me.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink
         Me.ClientSize = New System.Drawing.Size(1373, 980)
         Me.Controls.Add(Me.Label_GraphHeader)
         Me.Controls.Add(Me.Chart_AllScp)
         Me.Controls.Add(Me.Chart_SCP)
         Me.Name = "ScpGraph"
+        Me.StartPosition = System.Windows.Forms.FormStartPosition.Manual
         Me.Text = "Scp Graph"
         CType(Me.Chart_SCP, System.ComponentModel.ISupportInitialize).EndInit()
         CType(Me.Chart_AllScp, System.ComponentModel.ISupportInitialize).EndInit()

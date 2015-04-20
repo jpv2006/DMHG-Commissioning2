@@ -6,12 +6,7 @@ DMHGCommissioning
 </name>
 </assembly>
 <members>
-<member name="T:DMHG_Commissioning.Site">
-	<summary>
- An object to hold all relevant site information.
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_SiteInfo.Set_Site(DMHG_Commissioning.Site)">
+<member name="M:DMHG_Commissioning.Form_SiteInfo.Set_Site(DMHG_Commissioning.Site)">
 	<summary>
  Loads the information of the site given into the form.
  </summary>
@@ -31,428 +26,6 @@ DMHGCommissioning
  Updates column SiteSaved entry to True in row 1 of siteinfo table
  </summary>
 	<remarks></remarks>
-</member><member name="T:DMHG_Commissioning.sitesDataSet.siteinfoDataTable">
-	<summary>
-Represents the strongly named DataTable class.
-</summary>
-</member><member name="T:DMHG_Commissioning.sitesDataSet.siteinfoRow">
-	<summary>
-Represents strongly named DataRow class.
-</summary>
-</member><member name="T:DMHG_Commissioning.sitesDataSet.siteinfoRowChangeEvent">
-	<summary>
-Row event argument class
-</summary>
-</member><member name="T:DMHG_Commissioning.sitesDataSet">
-	<summary>
-Represents a strongly typed in-memory cache of data.
-</summary>
-</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.siteinfoTableAdapter">
-	<summary>
-Represents the connection and commands used to retrieve and save data.
-</summary>
-</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DMHG_Commissioning.sitesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Update rows in top-down order.
-</summary>
-</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DMHG_Commissioning.sitesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Insert rows in top-down order.
-</summary>
-</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DMHG_Commissioning.sitesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Delete rows in bottom-up order.
-</summary>
-</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
-	<summary>
-Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
-</summary>
-</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateAll(DMHG_Commissioning.sitesDataSet)">
-	<summary>
-Update all changes to the dataset.
-</summary>
-</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
-	<summary>
-Update Order Option
-</summary>
-</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
-	<summary>
-Used to sort self-referenced table's rows
-</summary>
-</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager">
-	<summary>
-TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
-</summary>
-</member><member name="P:DMHG_Commissioning.My.Resources.Resources.ResourceManager">
-	<summary>
-  Returns the cached ResourceManager instance used by this class.
-</summary>
-</member><member name="P:DMHG_Commissioning.My.Resources.Resources.Culture">
-	<summary>
-  Overrides the current thread's CurrentUICulture property for all
-  resource lookups using this strongly typed resource class.
-</summary>
-</member><member name="P:DMHG_Commissioning.My.Resources.Resources.DMHG_Logo">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="P:DMHG_Commissioning.My.Resources.Resources.DMHG_Logo_small">
-	<summary>
-  Looks up a localized resource of type System.Drawing.Bitmap.
-</summary>
-</member><member name="T:DMHG_Commissioning.My.Resources.Resources">
-	<summary>
-  A strongly-typed resource class, for looking up localized strings, etc.
-</summary>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_Form(DMHG_Commissioning.Site)">
-	<summary>
- Fills the form with a site's information.
- </summary>
-	<param name="site">The site whose information is to populate the form.</param>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Button_Save_Click(System.Object,System.EventArgs)">
-	<summary>
- Save the site's information.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Edit_Site(DMHG_Commissioning.Site)">
-	<summary>
- Attempts to edit the site.
- </summary>
-	<param name="site">Site to edit.</param>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_Site(DMHG_Commissioning.Site)">
-	<summary>
- Fills the given site with the information in the form.
- </summary>
-	<param name="site">The site to fill.</param>
-	<returns>The success of filling the site.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.Control)">
-	<summary>
- Parses a form control to data that can easily be stored in a site.
- </summary>
-	<param name="c">The control to parse.</param>
-	<returns>The success of the parsing.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.CheckBox)">
-	<summary>
- Parse a CheckBox control to data that can easily be stored in a site.
- </summary>
-	<param name="cb">The checkbox to parse.</param>
-	<returns>The success of the parsing.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.TextBox)">
-	<summary>
- Parses a TextBox control to data that can easily be stored in a site.
- </summary>
-	<param name="tb">The TextBox to parse.</param>
-	<returns>The success of the parsing.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.ComboBox)">
-	<summary>
- Parses a ComboBox Control to data that can easily be stored in a site.
- </summary>
-	<param name="cob">The ComboBox to parse.</param>
-	<returns>The success of the parsing.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Site_Database_Name(DMHG_Commissioning.Site)">
-	<summary>
- Formats a database name for the site's data database
- </summary>
-	<param name="site">The site to use.</param>
-	<returns>The appropriate name for the site's data database.</returns>
-	<remarks>This does not create the data database.</remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Site_Exists(DMHG_Commissioning.Site)">
-	<summary>
- Checks if the site already exists in the database.
- </summary>
-	<param name="site">Site to check for.</param>
-	<returns>Whether the site exists.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Update_Site(DMHG_Commissioning.Site)">
-	<summary>
- Attempts to update the site's entry in the database.
- </summary>
-	<param name="site">Site to update.</param>
-	<returns>Success of update.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Save_Site(DMHG_Commissioning.Site)">
-	<summary>
- Attempts to save the site in the database and create the data tables.
- </summary>
-	<param name="site">Site to save.</param>
-	<returns>Success of save.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.ConfigSaved(DMHG_Commissioning.Site)">
-	<summary>
- Sets column SiteSaved entry to False in siteinfo table
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.DoesTableExist(System.String,DMHG_Commissioning.Site)">
-	<summary>
- Checks to see if a table exists in Database or not.
- </summary>
-	<param name="tblName">Table name to check</param>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_PhotonFactors(DMHG_Commissioning.Site)">
-	<summary>
- Creates the tables for scp, scp2, sc, wf, edwf (Varian Enhanced Dynamic WF), mwf (Elekta Motorized WF), mlcdlg (Dosimetric Leaf Gap), 
- mlctf (mlc Transmission Factor), accessoryTF
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Drop_Table_PhotonFactors(DMHG_Commissioning.Site)">
-	<summary>
- Drops the tables for scp, scp2, sc, wf, edwf (Varian Enhanced Dynamic WF), mwf (Elekta Motorized WF), mlcdlg (Dosimetric Leaf Gap), 
- mlctf (mlc Transmission Factor), accessoryTF if site is updated with less tables
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_PhotonScans(DMHG_Commissioning.Site)">
-	<summary>
- Creates the tables for pdd_photons, pdd_photons_cones, pdd_photons_mlc, 
- tmr_photons, tmr_photons_cones, tmr_photons_mlc,
- cp_photons, ip_photons, dp_photons, 
- pdd_wedge, cp_wedge, ip_wedge, pdd_mwedge (Elekta motorized wedge), cp_mwedge, ip_mwedge,
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_ElectronFactors(DMHG_Commissioning.Site)">
-	<summary>
- Creates the tables for of_electrons_100, of_electrons_105, of_electrons_110, cutoutTF
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_ElectronScans(DMHG_Commissioning.Site)">
-	<summary>
- Creates the tables for pdd_electrons, cp_electrons, ip_electrons, cp_electron_air
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_SetupInfo(DMHG_Commissioning.Site)">
-	<summary>
- Creates the tables which holds the measurement setup information on all factors and scans
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonFactors_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for Photon Factor table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon PDD table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddWedge_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon Wedge PDD table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddMWedge_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon Motorized Wedge PDD table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddMLC_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon MLC PDD table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddCones_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon Cones PDD table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonTMROpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon TMR table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonTMRMLC_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon MLC TMR table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonTMRCones_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon Cones TMR table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonProfilesOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon Profiles table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonProfilesWedges_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon Wedge Profiles table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonProfilesMWedge_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon Motorized Wedge Profiles table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronPddOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon PDD table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronPddCutout_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Photon PDD with Cutouts table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronProfilesOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Electron Profiles table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronProfilesAir_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for the Electron Profiles in Air table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_SelectedConfiguration_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Creates the field sizes needed for each table of data to be measured based on the Linac and RTP System(s).
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Generate_Insert_Site_Command(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Generates an MySql command to insert a new site into the database.
- </summary>
-	<param name="site">New site to add to the database.</param>
-	<param name="connection">Database connection, must be opened beforehand.</param>
-	<returns>The sql command.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Generate_Update_Site_Command(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
-	<summary>
- Generates an MySql command to update an existing site's information in the database.
- </summary>
-	<param name="site">The site to update.</param>
-	<param name="connection">Database connection, must be opened beforehand.</param>
-	<returns>The sql command.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_EditSite.Add_Command_Parameters(MySql.Data.MySqlClient.MySqlCommand,DMHG_Commissioning.Site)">
-	<summary>
- Adds the site parameters to a prepared MySql command.
- </summary>
-	<param name="command">The prepared MySql command.</param>
-	<param name="site">The site to add.</param>
-	<returns>The populated command.</returns>
-	<remarks>When writing the command text, ensure the parameters retain the database's capitalization.</remarks>
-</member><member name="M:DMHG_Commissioning.Form_Login.Process_Login">
-	<summary>
- Attempts to log the user in.
- </summary>
-	<returns>The success of the login.</returns>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_Login.Show_Logged_In">
-	<summary>
- Changes the form to the logged in appearance.
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_Login.Show_Logged_Out">
-	<summary>
- Changes the form to the logged out appearance.
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_Login.Populate_Existing_Sites">
-	<summary>
- Populates the existing site ComboBox Linac TextBox with the existing sites from the database.
- </summary>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Populate_Data_Table(System.Windows.Forms.DataGridView,System.String)">
-	<summary>
- Populates the DGV data table with data from the factors database of the active site and the given table.
- </summary>
-	<param name="tableControl">The data grid table control to edit.</param>
-	<param name="table">The factors table in the database to pull data from.</param>
-	<remarks></remarks>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Scp_Calculate(System.Object)">
-	<summary>
- Calculates Scp/Sc.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Scp_CalcEdit(System.Object)">
-	<summary>
- Calculates all Scp/Sc if there is an edit, writes the value into scpData and updates the database.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Temperature_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
-	<summary>
- Pressing the Enter key selects the TextBox_Pressure, starting from TextBox_Temperature
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Pressure_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
-	<summary>
- Pressing the Enter key selects the TextBox_Reading1, starting from TextBox_Pressure
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Reading1_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
-	<summary>
- Pressing the Enter key selects the TextBox_Reading2, starting from TextBox_Reading1 
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Reading2_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
-	<summary>
- Pressing the Enter key either selects the TextBox_Temperature or TextBox_Reading1, starting from TextBox_Reading2 
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.RepeatMeasurement">
-	<summary>
- Clears TextBox_Reading1, Reading2, and Average and sets the cursor to TextBox_Reading1 in order to take new measurements in
- response to too large a difference between Reading 1 and Reading2 and user selects to repeat Measurement.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Enter_Click(System.Object,System.EventArgs)">
-	<summary>
- Enters data into a prexisting row.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.ReadingTolerance(System.Object,System.Object,System.Object)">
-	<summary>
- Checks to see if Reading1 and Reading2 are within tolearance
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Save_Row(System.Data.DataRow)">
-	<summary>
- Saves a row to the database. Receives the data in row as an argument from the call.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Add_Row_Command_Parameters(System.Data.DataRow,MySql.Data.MySqlClient.MySqlCommand)">
-	<summary>
- Adds to the MySqlCommand command the entries for a row and fills the entries with the row data. Returns the filled command to Save_Row
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Edit_Click(System.Object,System.EventArgs)">
-	<summary>
- Responds to an Edit request by enabling the DGV so a row can be selected by the mouse.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.DataGridView_Factors_CellMouseClick(System.Object,System.Windows.Forms.DataGridViewCellMouseEventArgs)">
-	<summary>
- Selects a row using the mouse.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_Row_Edit(System.Data.DataRow)">
-	<summary>
- Loads the data entry row with the data in the row selected in DataViewGrid after an edit request.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_XYRow_Edit(System.Data.DataRow)">
-	<summary>
- Loads the data entry row with the X, Y data in the DataViewGrid row where data entry is to begin.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_TP(System.Data.DataRow)">
-	<summary>
- Loads the data entry row with the Temp and Press data in the DataViewGrid row using the values found in the previous row.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Reading1_TextChanged(System.Object,System.EventArgs)">
-	<summary>
- The next two subroutines check to see if any of the readings entered have changed and changes the average as needed.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Back_Click(System.Object,System.EventArgs)">
-	<summary>
- Code for going back to the Data To Collect page if use selects the Back Button
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Exit_Click(System.Object,System.EventArgs)">
-	<summary>
- Code for exiting the program based on user selection of Exit Button
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_Row_Enter(System.Data.DataRow)">
-	<summary>
- Loads the X and Y entries of the currently selected DGV row into the data entry row.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Skip_Click(System.Object,System.EventArgs)">
-	<summary>
- Skips the Panel_Stability tests if the user chooses. Also called after stability is reached.
- </summary>
-</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_StabEnter_Click(System.Object,System.EventArgs)">
-	<summary>
- The following is to evaluate the entries on Panel_Stability and determine when stability is reached
- </summary>
-</member><member name="T:DMHG_Commissioning.Form_ScpData">
-	<summary>
- Loads the ScpData form
- </summary>
 </member><member name="T:DMHG_Commissioning.SNC_DOSDataSet.DatabaseMaintenanceDataTable">
 	<summary>
 Represents the strongly named DataTable class.
@@ -1441,6 +1014,433 @@ TableAdapterManager is used to coordinate TableAdapters in the dataset to enable
 	<summary>
 Represents a strongly typed in-memory cache of data.
 </summary>
+</member><member name="M:DMHG_Commissioning.Form_Login.Process_Login">
+	<summary>
+ Attempts to log the user in.
+ </summary>
+	<returns>The success of the login.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_Login.Show_Logged_In">
+	<summary>
+ Changes the form to the logged in appearance.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_Login.Show_Logged_Out">
+	<summary>
+ Changes the form to the logged out appearance.
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_Login.Populate_Existing_Sites">
+	<summary>
+ Populates the existing site ComboBox Linac TextBox with the existing sites from the database.
+ </summary>
+	<remarks></remarks>
+</member><member name="T:DMHG_Commissioning.sitesDataSet.siteinfoDataTable">
+	<summary>
+Represents the strongly named DataTable class.
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSet.siteinfoRow">
+	<summary>
+Represents strongly named DataRow class.
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSet.siteinfoRowChangeEvent">
+	<summary>
+Row event argument class
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSet">
+	<summary>
+Represents a strongly typed in-memory cache of data.
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.siteinfoTableAdapter">
+	<summary>
+Represents the connection and commands used to retrieve and save data.
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateUpdatedRows(DMHG_Commissioning.sitesDataSet,System.Collections.Generic.List{System.Data.DataRow},System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Update rows in top-down order.
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateInsertedRows(DMHG_Commissioning.sitesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Insert rows in top-down order.
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateDeletedRows(DMHG_Commissioning.sitesDataSet,System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Delete rows in bottom-up order.
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.GetRealUpdatedRows(System.Data.DataRow[],System.Collections.Generic.List{System.Data.DataRow})">
+	<summary>
+Remove inserted rows that become updated rows after calling TableAdapter.Update(inserted rows) first
+</summary>
+</member><member name="M:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateAll(DMHG_Commissioning.sitesDataSet)">
+	<summary>
+Update all changes to the dataset.
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.UpdateOrderOption">
+	<summary>
+Update Order Option
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager.SelfReferenceComparer">
+	<summary>
+Used to sort self-referenced table's rows
+</summary>
+</member><member name="T:DMHG_Commissioning.sitesDataSetTableAdapters.TableAdapterManager">
+	<summary>
+TableAdapterManager is used to coordinate TableAdapters in the dataset to enable Hierarchical Update scenarios
+</summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_Form(DMHG_Commissioning.Site)">
+	<summary>
+ Fills the form with a site's information.
+ </summary>
+	<param name="site">The site whose information is to populate the form.</param>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Button_Save_Click(System.Object,System.EventArgs)">
+	<summary>
+ Save the site's information.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Edit_Site(DMHG_Commissioning.Site)">
+	<summary>
+ Attempts to edit the site.
+ </summary>
+	<param name="site">Site to edit.</param>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_Site(DMHG_Commissioning.Site)">
+	<summary>
+ Fills the given site with the information in the form.
+ </summary>
+	<param name="site">The site to fill.</param>
+	<returns>The success of filling the site.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.Control)">
+	<summary>
+ Parses a form control to data that can easily be stored in a site.
+ </summary>
+	<param name="c">The control to parse.</param>
+	<returns>The success of the parsing.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.CheckBox)">
+	<summary>
+ Parse a CheckBox control to data that can easily be stored in a site.
+ </summary>
+	<param name="cb">The checkbox to parse.</param>
+	<returns>The success of the parsing.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.TextBox)">
+	<summary>
+ Parses a TextBox control to data that can easily be stored in a site.
+ </summary>
+	<param name="tb">The TextBox to parse.</param>
+	<returns>The success of the parsing.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Parse_Control(System.Windows.Forms.ComboBox)">
+	<summary>
+ Parses a ComboBox Control to data that can easily be stored in a site.
+ </summary>
+	<param name="cob">The ComboBox to parse.</param>
+	<returns>The success of the parsing.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Site_Database_Name(DMHG_Commissioning.Site)">
+	<summary>
+ Formats a database name for the site's data database
+ </summary>
+	<param name="site">The site to use.</param>
+	<returns>The appropriate name for the site's data database.</returns>
+	<remarks>This does not create the data database.</remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Site_Exists(DMHG_Commissioning.Site)">
+	<summary>
+ Checks if the site already exists in the database.
+ </summary>
+	<param name="site">Site to check for.</param>
+	<returns>Whether the site exists.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Update_Site(DMHG_Commissioning.Site)">
+	<summary>
+ Attempts to update the site's entry in the database.
+ </summary>
+	<param name="site">Site to update.</param>
+	<returns>Success of update.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Save_Site(DMHG_Commissioning.Site)">
+	<summary>
+ Attempts to save the site in the database and create the data tables.
+ </summary>
+	<param name="site">Site to save.</param>
+	<returns>Success of save.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.ConfigSaved(DMHG_Commissioning.Site)">
+	<summary>
+ Sets column SiteSaved entry to False in siteinfo table
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.DoesTableExist(System.String,DMHG_Commissioning.Site)">
+	<summary>
+ Checks to see if a table exists in Database or not.
+ </summary>
+	<param name="tblName">Table name to check</param>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_PhotonFactors(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables for scp, scp2, sc, wf, edwf (Varian Enhanced Dynamic WF), mwf (Elekta Motorized WF), mlcdlg (Dosimetric Leaf Gap), 
+ mlctf (mlc Transmission Factor), accessoryTF
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Drop_Table_PhotonFactors(DMHG_Commissioning.Site)">
+	<summary>
+ Drops the tables for scp, scp2, sc, wf, edwf (Varian Enhanced Dynamic WF), mwf (Elekta Motorized WF), mlcdlg (Dosimetric Leaf Gap), 
+ mlctf (mlc Transmission Factor), accessoryTF if site is updated with less tables
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_PhotonScans(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables for pdd_photons, pdd_photons_cones, pdd_photons_mlc, 
+ tmr_photons, tmr_photons_cones, tmr_photons_mlc,
+ cp_photons, ip_photons, dp_photons, 
+ pdd_wedge, cp_wedge, ip_wedge, pdd_mwedge (Elekta motorized wedge), cp_mwedge, ip_mwedge,
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_ElectronFactors(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables for of_electrons_100, of_electrons_105, of_electrons_110, cutoutTF
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_ElectronScans(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables for pdd_electrons, cp_electrons, ip_electrons, cp_electron_air
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Create_Table_SetupInfo(DMHG_Commissioning.Site)">
+	<summary>
+ Creates the tables which holds the measurement setup information on all factors and scans
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonFactors_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for Photon Factor table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddWedge_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Wedge PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddMWedge_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Motorized Wedge PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddMLC_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon MLC PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonPddCones_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Cones PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonTMROpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon TMR table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonTMRMLC_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon MLC TMR table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonTMRCones_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Cones TMR table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonProfilesOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Profiles table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonProfilesWedges_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Wedge Profiles table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_PhotonProfilesMWedge_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon Motorized Wedge Profiles table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronPddOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon PDD table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronPddCutout_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Photon PDD with Cutouts table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronProfilesOpen_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Electron Profiles table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_ElectronProfilesAir_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for the Electron Profiles in Air table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Fill_SelectedConfiguration_Tables(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Creates the field sizes needed for each table of data to be measured based on the Linac and RTP System(s).
+ </summary>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Generate_Insert_Site_Command(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Generates an MySql command to insert a new site into the database.
+ </summary>
+	<param name="site">New site to add to the database.</param>
+	<param name="connection">Database connection, must be opened beforehand.</param>
+	<returns>The sql command.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Generate_Update_Site_Command(DMHG_Commissioning.Site,MySql.Data.MySqlClient.MySqlConnection)">
+	<summary>
+ Generates an MySql command to update an existing site's information in the database.
+ </summary>
+	<param name="site">The site to update.</param>
+	<param name="connection">Database connection, must be opened beforehand.</param>
+	<returns>The sql command.</returns>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_EditSite.Add_Command_Parameters(MySql.Data.MySqlClient.MySqlCommand,DMHG_Commissioning.Site)">
+	<summary>
+ Adds the site parameters to a prepared MySql command.
+ </summary>
+	<param name="command">The prepared MySql command.</param>
+	<param name="site">The site to add.</param>
+	<returns>The populated command.</returns>
+	<remarks>When writing the command text, ensure the parameters retain the database's capitalization.</remarks>
+</member><member name="P:DMHG_Commissioning.My.Resources.Resources.ResourceManager">
+	<summary>
+  Returns the cached ResourceManager instance used by this class.
+</summary>
+</member><member name="P:DMHG_Commissioning.My.Resources.Resources.Culture">
+	<summary>
+  Overrides the current thread's CurrentUICulture property for all
+  resource lookups using this strongly typed resource class.
+</summary>
+</member><member name="P:DMHG_Commissioning.My.Resources.Resources.DMHG_Logo">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="P:DMHG_Commissioning.My.Resources.Resources.DMHG_Logo_small">
+	<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member><member name="T:DMHG_Commissioning.My.Resources.Resources">
+	<summary>
+  A strongly-typed resource class, for looking up localized strings, etc.
+</summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Populate_Data_Table(System.Windows.Forms.DataGridView,System.String)">
+	<summary>
+ Populates the DGV data table with data from the factors database of the active site and the given table.
+ </summary>
+	<param name="tableControl">The data grid table control to edit.</param>
+	<param name="table">The factors table in the database to pull data from.</param>
+	<remarks></remarks>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Scp_Calculate(System.Object)">
+	<summary>
+ Calculates Scp/Sc.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Scp_CalcEdit(System.Object)">
+	<summary>
+ Calculates all Scp/Sc if there is an edit, writes the value into scpData and updates the database.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Temperature_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Pressing the Enter key selects the TextBox_Pressure, starting from TextBox_Temperature
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Pressure_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Pressing the Enter key selects the TextBox_Reading1, starting from TextBox_Pressure
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Reading1_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Pressing the Enter key selects the TextBox_Reading2, starting from TextBox_Reading1 
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Reading2_KeyPress(System.Object,System.Windows.Forms.KeyPressEventArgs)">
+	<summary>
+ Pressing the Enter key either selects the TextBox_Temperature or TextBox_Reading1, starting from TextBox_Reading2 
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.RepeatMeasurement">
+	<summary>
+ Clears TextBox_Reading1, Reading2, and Average and sets the cursor to TextBox_Reading1 in order to take new measurements in
+ response to too large a difference between Reading 1 and Reading2 and user selects to repeat Measurement.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Enter_Click(System.Object,System.EventArgs)">
+	<summary>
+ Enters data into a prexisting row.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.ReadingTolerance(System.Object,System.Object,System.Object)">
+	<summary>
+ Checks to see if Reading1 and Reading2 are within tolearance
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Save_Row(System.Data.DataRow)">
+	<summary>
+ Saves a row to the database. Receives the data in row as an argument from the call.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Add_Row_Command_Parameters(System.Data.DataRow,MySql.Data.MySqlClient.MySqlCommand)">
+	<summary>
+ Adds to the MySqlCommand command the entries for a row and fills the entries with the row data. Returns the filled command to Save_Row
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Edit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Responds to an Edit request by enabling the DGV so a row can be selected by the mouse.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.DataGridView_Factors_CellMouseClick(System.Object,System.Windows.Forms.DataGridViewCellMouseEventArgs)">
+	<summary>
+ Selects a row using the mouse.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_Row_Edit(System.Data.DataRow)">
+	<summary>
+ Loads the data entry row with the data in the row selected in DataViewGrid after an edit request.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_XYRow_Edit(System.Data.DataRow)">
+	<summary>
+ Loads the data entry row with the X, Y data in the DataViewGrid row where data entry is to begin.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_TP(System.Data.DataRow)">
+	<summary>
+ Loads the data entry row with the Temp and Press data in the DataViewGrid row using the values found in the previous row.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.TextBox_Reading1_TextChanged(System.Object,System.EventArgs)">
+	<summary>
+ The next two subroutines check to see if any of the readings entered have changed and changes the average as needed.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Back_Click(System.Object,System.EventArgs)">
+	<summary>
+ Code for going back to the Data To Collect page if use selects the Back Button
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Exit_Click(System.Object,System.EventArgs)">
+	<summary>
+ Code for exiting the program based on user selection of Exit Button
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Load_Row_Enter(System.Data.DataRow)">
+	<summary>
+ Loads the X and Y entries of the currently selected DGV row into the data entry row.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_Skip_Click(System.Object,System.EventArgs)">
+	<summary>
+ Skips the Panel_Stability tests if the user chooses. Also called after stability is reached.
+ </summary>
+</member><member name="M:DMHG_Commissioning.Form_ScpData.Button_StabEnter_Click(System.Object,System.EventArgs)">
+	<summary>
+ The following is to evaluate the entries on Panel_Stability and determine when stability is reached
+ </summary>
+</member><member name="T:DMHG_Commissioning.Form_ScpData">
+	<summary>
+ Loads the ScpData form
+ </summary>
+</member><member name="T:DMHG_Commissioning.Site">
+	<summary>
+ An object to hold all relevant site information.
+ </summary>
+	<remarks></remarks>
 </member>
 </members>
 </doc>

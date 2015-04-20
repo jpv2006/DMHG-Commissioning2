@@ -120,3 +120,24 @@ C:\Users\Jim\Documents\Projects\DMHG-Commissioning\DMHG Commissioning\obj\x86\De
 C:\Users\Jim\Documents\Projects\DMHG-Commissioning\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.DataToCollect.resources
 C:\Users\Jim\Documents\Projects\DMHG-Commissioning\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.SNCSysImport.resources
 C:\Users\Jim\Documents\Projects\DMHG-Commissioning\DMHG Commissioning\obj\x86\Debug\DMHG Commissioning.vbproj.GenerateResource.Cache
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\bin\Debug\DMHG Commissioning.exe.config
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG Commissioning.exe
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG Commissioning.xml
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG Commissioning.pdb
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\bin\Debug\DMHG Commissioning.exe
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\bin\Debug\DMHG Commissioning.pdb
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\bin\Debug\DMHG Commissioning.xml
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG Commissioning.vbprojResolveAssemblyReference.cache
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.Form_EditSite.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.Form_ECF.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.Form_ElectronScans.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.Form_Login.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.PDDGraph.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.Form_PhotonScans.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.Form_ScpData.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.ScpGraph.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.Form_SiteInfo.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.Resources.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.DataToCollect.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG_Commissioning.SNCSysImport.resources
+C:\Users\Jim\Documents\Visual Studio 2013\Projects\DMHG-Commissioning2\DMHG Commissioning\obj\x86\Debug\DMHG Commissioning.vbproj.GenerateResource.Cache

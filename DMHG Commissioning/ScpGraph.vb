@@ -38,6 +38,11 @@ Public Class ScpGraph
         ChartTitles(Chart_AllScp, "Scp vs. Field Size")
         ChartSetup(Chart_AllScp)
         '
+        ' Place Form on second screen if attached
+        '
+        MoveToSecondScreen()
+
+        '
         ' Parse the data and assign to Series
         '
         'Chart_Update()
@@ -115,8 +120,6 @@ Public Class ScpGraph
         ' Fill the Multi-Scp Array
         '
         Chart_AllScp.Series.Clear()
-
-
 
         k = DBscpData.Rows(0).Item("X")     ' initial field size
         l = CountMultiFields(k)             ' How many fields in this series
@@ -327,4 +330,34 @@ Public Class ScpGraph
     '    axisY.ScaleView.Zoom(ySelectionStart, ySelectionEnd)
 
     'End Sub
+
+    Private Sub MoveToSecondScreen()
+        '
+        ' Place Form on secons screen
+        '
+        Dim Screen2X, Screen2Y As Integer
+        Me.StartPosition = FormStartPosition.Manual
+
+        For Each s In Screen.AllScreens
+            If Not s.Primary Then
+                Screen2X = s.Bounds.X
+                Screen2Y = s.Bounds.Y
+                Exit For
+            End If
+        Next
+
+        ' use the forms current location & shift to new screen.
+        Dim location As Point = Me.Location
+        location.Offset(Screen2X, Screen2Y)
+        '
+        ' Set new location to be second screen
+        ' and then maximize if there is a second screen.
+        '
+        Me.Location = location
+        If Screen2X > 0 Then
+            Me.WindowState = FormWindowState.Maximized
+        End If
+
+    End Sub
+
 End Class

@@ -130,7 +130,7 @@ Public Class PDDGraph
         '=================================================================
 
         Dim NDepths = DBPDDData.Rows.Count
-        Dim k, iSeries As Integer
+        Dim iSeries As Integer
         '
         ' Dim (x,y) matrices for points
         '
